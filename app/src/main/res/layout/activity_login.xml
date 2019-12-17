@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                />
+
+            <com.effseele.edukosh.cusFnt.TextViewBoldFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textAllCaps="true"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                />
+
+            <com.effseele.edukosh.cusFnt.TextViewBoldFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ATTENDANCE"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                />
+
+            <view
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="8dp"
+                />
+
+            <com.effseele.edukosh.cusFnt.TextViewBoldFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TEACHER LOGIN"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <com.effseele.edukosh.cusFnt.EditTextAirenRegular
+                        android:id="@+id/emailidET"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/edittextback"
+                        android:hint="Enter your login ID"
+                        android:paddingLeft="15dp"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:inputType="text"
+                        />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/idTIL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColorHint="@color/gray" />
+
+
+                    <com.effseele.edukosh.cusFnt.EditTextAirenRegular
+                        android:id="@+id/passwordET"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/edittextback"
+                        android:hint="Password"
+                        android:paddingLeft="15dp"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:inputType="textPassword"
+                        />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/passTIL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColorHint="@color/gray" />
+
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <com.effseele.edukosh.cusFnt.ButtonAirenRegular
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/button"
+                android:text="Submit"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+
+                />
+
+            <com.effseele.edukosh.cusFnt.TextViewBoldFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CALL FOR SUPPORT: +91 9811624556"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</layout>
